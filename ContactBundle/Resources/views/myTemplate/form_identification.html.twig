@@ -1,0 +1,64 @@
+
+{% extends 'ContactBundle::base.html.twig' %}
+
+{% block title %}Identification{% endblock %}
+
+{% block body %}
+
+
+{% image '@ContactBundle/Web/images/preloader.gif' %}
+    <script> var LoadStatusText = '<img src="{{ asset_url }}"/> connexion en cours...'; </script>
+{% endimage %}
+
+
+<div class="container">
+
+    <div class="jumbotron">
+        
+        <h1 class="display-3 title-box" style="margin-bottom:40px">Identification</h1>
+        <p class="lead">Merci de renseigner votre pseudo ainsi que votre mot de passe<br>afin d'accéder au formulaire de contact.</p><br>
+
+
+        {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+
+
+            <div class="formContainer">
+
+                <div class="form-group row">
+
+                    {{ form_label(form.pseudo, "Pseudo", {'label_attr': {'class': 'col-sm-3 col-form-label'}}) }}
+                    {{ form_errors(form.pseudo) }}
+
+                    <div class="col-sm-9">
+                        {{ form_widget(form.pseudo, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+
+                </div>
+
+                <div class="form-group row">
+
+                    {{ form_label(form.password, "Mot de passe", {'label_attr': {'class': 'col-sm-3 col-form-label'}}) }}
+                    {{ form_errors(form.password) }}
+
+                    <div class="col-sm-9">
+                        {{ form_widget(form.password, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="form_submit"></div>
+
+            {{ form_widget(form.valider, {'attr': {'class': 'btn btn-lg btn-success'}}) }}
+
+
+        {{ form_end(form) }}
+
+
+    </div>
+
+</div>
+
+
+{% endblock %}

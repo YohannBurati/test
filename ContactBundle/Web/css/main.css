@@ -1,0 +1,101 @@
+
+body
+{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.header
+{
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.header
+{
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #e5e5e5;
+}
+
+.header h3
+{
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+
+#form_submit
+{
+  padding:20 0;
+}
+
+.container-narrow > hr
+{
+  margin: 2rem 0;
+}
+
+.jumbotron
+{
+  text-align: center;
+  border-bottom: .05rem solid #e5e5e5;
+}
+.formContainer
+{
+  text-align: left;
+  margin: 0 50px;
+}
+
+.formContainer input
+{
+  line-height: 25px;
+}
+
+@media screen and (min-width: 48em)
+{
+  .header
+  {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .header
+  {
+    margin-bottom: 2rem;
+  }
+  .jumbotron
+  {
+    border-bottom: 0;
+  }
+  .container
+  {
+    max-width: 46rem;
+  }
+}
+
+.validation-errors
+{
+  margin:30px auto;
+  padding: .2rem .2rem .2rem;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  font-size:16px;
+  background-color: #d9534f;
+  width:300px;
+  line-height:20px;
+}
+
+.validation-temp
+{
+  margin:30px auto;
+  padding: .2rem .2rem .2rem;
+  line-height: 1;
+  color: #000000;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  font-size:16px;
+  line-height:20px;
+}

@@ -1,0 +1,16 @@
+
+{% if list_errors %}
+
+  <div class="validation-errors">
+
+     {% for error in list_errors %}
+        {{ error }}<br>
+    {% endfor %}
+    
+  </div>
+
+{% else %}
+
+  <script> window.location.href = " {{ path('form_contact') }} "; </script>
+
+{% endif %}
